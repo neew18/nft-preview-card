@@ -1,0 +1,145 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+
+.card-container {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1rem;
+
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+h1:hover,
+.creator-name:hover {
+  cursor: pointer;
+  color: rgb(0, 255, 247);
+}
+
+.img-overlay {
+  position: relative;
+  border: 1px red solid;
+  height: auto;
+  margin-left: 0.5rem;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card-image {
+  border: 1px green solid;
+}
+
+.hover-img {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  padding: 10.48rem;
+  background-color: rgba(0, 255, 247, 0.5);
+  -webkit-transition: all 400ms ease-out;
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  -ms-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+}
+
+.hover-img:hover {
+  opacity: 1;
+}
+/*
+.img-overlay img:hover {
+  opacity: 1;
+  cursor: pointer;
+  background-color: rgba(0, 255, 247, 0.5);
+}
+.img-overlay img {
+  display: block;
+  margin: 0 auto;
+  padding: 10.5rem;
+  opacity: 0;
+  background-color: rgba(0, 255, 247, 0.5);
+  border-radius: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .img-overlay {
+    bottom: 29.3%;
+  }
+}
+*/
+.description {
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+.soft-blue {
+  color: hsl(215, 51%, 70%);
+}
+
+.soft-blue > img {
+  margin-left: 0.8rem;
+}
+.cyan,
+.attribution a:hover {
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+
+.cyan > img,
+.soft-blue > img {
+  margin-right: 0.6rem;
+  padding-bottom: 0.4rem;
+}
+
+.divider {
+  border: 1px solid hsl(215, 32%, 27%);
+}
+
+.creator {
+  width: 3.3rem;
+  border: 1px solid white;
+  border-radius: 3rem;
+}
+
+.creator-name,
+h1,
+.attribution a {
+  transition: all 200ms ease-in-out;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 18% auto;
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: white;
+}
