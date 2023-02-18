@@ -10,7 +10,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
     - [The challenge](#the-challenge)
     - [Screenshot](#screenshot)
     - [Links](#links)
-  - [My process](#my-process)
     - [Built with](#built-with)
   - [Author](#author)
 
@@ -29,16 +28,13 @@ Users should be able to:
 
 ### Links
 
-
-
-## My process
+View the live version [here](https://nft-preview-card-sandy.vercel.app/)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- CSS Grid
+- CSS Flexbox
 - Mobile-first workflow
 - BootStrap
 
