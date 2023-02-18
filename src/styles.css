@@ -22,8 +22,10 @@ body {
 
 .card-container {
   background-color: hsl(216, 50%, 16%);
-  border-radius: 1rem;
+}
 
+.card-container,.img-overlay,.hover-img{
+  border-radius: 1rem;
 }
 
 h1 {
@@ -39,7 +41,6 @@ h1:hover,
 
 .img-overlay {
   position: relative;
-  border: 1px red solid;
   height: auto;
   margin-left: 0.5rem;
   display: block;
@@ -47,16 +48,12 @@ h1:hover,
   overflow: hidden;
 }
 
-.card-image {
-  border: 1px green solid;
-}
-
 .hover-img {
   position: absolute;
   opacity: 0;
   top: 0;
   right: 0;
-  padding: 10.48rem;
+  padding: 10.49rem;
   background-color: rgba(0, 255, 247, 0.5);
   -webkit-transition: all 400ms ease-out;
   -moz-transition: all 400ms ease-out;
