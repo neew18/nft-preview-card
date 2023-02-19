@@ -1,4 +1,14 @@
-:root {
+:root{
+  --cyan :hsl(178, 100%, 50%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --main-bg-dark-blue: hsl(217, 54%, 11%);
+  --card-bg-dark-blue: hsl(216, 50%, 16%);
+  --divider-dark-blue: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --ff : "Outfit", sans-serif;
+}
+
+html {
   font-size: 62.5%;
 }
 
@@ -15,13 +25,13 @@ body {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(217, 54%, 11%);
-  font-family: "Outfit", sans-serif;
+  color:  var(--white);
+  background-color: var(--main-bg-dark-blue);
+  font-family: var(--ff);
 }
 
 .card-container {
-  background-color: hsl(216, 50%, 16%);
+  background-color: var(--card-bg-dark-blue);
 }
 
 .card-container,.img-overlay,.hover-img{
@@ -36,7 +46,7 @@ h1 {
 h1:hover,
 .creator-name:hover {
   cursor: pointer;
-  color: rgb(0, 255, 247);
+  color: var(--cyan);
 }
 
 .img-overlay {
@@ -54,7 +64,7 @@ h1:hover,
   top: 0;
   right: 0;
   padding: 10.49rem;
-  background-color: rgba(0, 255, 247, 0.5);
+  background-color:  rgba(0, 255, 255,0.3);
   -webkit-transition: all 400ms ease-out;
   -moz-transition: all 400ms ease-out;
   -o-transition: all 400ms ease-out;
@@ -88,11 +98,11 @@ h1:hover,
 */
 .description {
   font-weight: 300;
-  color: hsl(215, 51%, 70%);
+  color: var(--soft-blue);
 }
 
 .soft-blue {
-  color: hsl(215, 51%, 70%);
+  color: var(--soft-blue);
 }
 
 .soft-blue > img {
@@ -100,7 +110,7 @@ h1:hover,
 }
 .cyan,
 .attribution a:hover {
-  color: hsl(178, 100%, 50%);
+  color: var(--cyan);
   font-weight: 400;
 }
 
@@ -111,12 +121,12 @@ h1:hover,
 }
 
 .divider {
-  border: 1px solid hsl(215, 32%, 27%);
+  border: 1px solid var(--divider-dark-blue);
 }
 
 .creator {
   width: 3.3rem;
-  border: 1px solid white;
+  border: 1px solid var(--white);
   border-radius: 3rem;
 }
 
@@ -138,5 +148,5 @@ h1,
 
 .attribution a {
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
